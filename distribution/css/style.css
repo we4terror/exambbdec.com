@@ -1,0 +1,238 @@
+  
+*{box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: absolute;
+  width: 150px;
+  max-width: 150px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: deepskyblue;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: white;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* Text: All The Best Editing */
+.main
+#bottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 34px;
+    animation-name: shake;
+  }
+
+/* Login Page Box and Button Editing */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  padding: 0%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: deepskyblue;
+}
+
+.welcome_text {
+        background-color:deepskyblue ;
+        width: 400px;
+}
+
+.welcome_form input,
+.welcome_form button {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+.welcome_form input{
+        margin-bottom: 15px;
+        background-color: transparent;
+        border: none;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        font-size: 28px;
+        font-family: "Times New Roman", Times, serif, bold;
+        text-align: center;
+}
+
+.welcome_form button{
+    font-size: 28px;
+    padding: 10px 0;
+    border-radius: 29px;
+    border: none;
+    background-color: white;
+    color: rgb(70, 25, 192);
+    transition: 0.4s all;
+    font-family: "Times New Roman", Times, serif, bold;
+}
+
+.welcome_form button:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 10px;
+    cursor: pointer;
+}
+
+.welcome_form input:focus,
+.welcome_form button:focus{
+    outline: none;
+}
+
+.quiz{
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 60px auto;
+  height: 500px;
+  width: 900px;
+  background-color: azure;
+}
+
+.quiz_header{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.quiz_body{
+  background-color: gainsboro;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px;
+}
+
+.quiz_user{
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+}
+
+.quiz_timer{
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  padding: 0 28px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+
+.option_group{
+  list-style-type:none ;
+  margin: 30px 0;
+}
+
+.option{
+  background-color:springgreen;
+  width: 300px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 100px;
+  border: 2px solid gainsboro ;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.option:hover{
+  cursor: pointer;
+  border: 2px solid blue ;
+  color: black;
+}
+
+.btn-next{
+  background-color: blue;
+  color: white;
+  padding: 15px 34px;
+  border-radius: 28px;
+  transition: 0.4s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.btn-next:hover{
+  cursor: pointer;
+  background-color: cyan;
+  border: 2px solid black ;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0px 2px 5px 1px rgb(0, 0, 0);
+}
+
+.active{
+  background-color: aqua;
+  color: black;
+}
+
+.award_icon {
+  font-size: 300px;
+  color: blue;
+  margin: 40px;
+}
+
+.username
+ {
+  color: aliceblue;
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 28px;
+  padding-bottom: 18px;
+}
+
+.usertime,
+.userpoints {
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid black ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+}
